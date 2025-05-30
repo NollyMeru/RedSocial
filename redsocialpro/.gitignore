@@ -1,0 +1,70 @@
+HELP.md
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+# Maven
+/target/
+!.mvn/wrapper/maven-wrapper.jar
+.mvn/wrapper/maven-wrapper.properties
+.mvn/wrapper/maven-wrapper.jar
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+
+# Eclipse/VS Code
+.project
+.classpath
+.settings/
+.vscode/
+*.launch
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Java
+*.class
+
+# Environment files
+.env
+*.env
+
+# Database files (never commit actual DB dumps or credentials)
+*.sql
+*.db
+*.mv.db
+*.h2.db
+
+# PostgreSQL (local connection or credentials files)
+/*.pgdata/
+pgdata/
+postgresql.conf
+pg_hba.conf
+
+# Misc
+*.bak
+*.tmp
+*.swp
+*.swo
+
+# Ignore local application.properties or application.yml if it contains sensitive info
+# Remove the comment if you store secrets locally and not in version control
+# src/main/resources/application.properties
+# src/main/resources/application.yml
