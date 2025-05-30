@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RedSocialPro - Inicio de sesión</title>
+  <link rel="stylesheet" href="/css/login.css">
+</head>
+<body>
+  <header class="header">
+    <img src="logo.png" alt="Logo RedSocialPro" class="logo" />
+    <h1 class="title">RedSocialPro</h1>
+  </header>
+
+  <main class="main-container">
+    <img src="1d1e1e68-96cc-45c6-8461-fcc45b2fb2f1.png" alt="User Icon" class="user-icon" />
+
+    <div class="login-box">
+      <form action="/login" method="POST">
+        <div class="user-type-select">
+          <label for="user-type">TIPO DE USUARIO</label>
+          <select id="user-type" name="userType">
+            <option value="empresa">Empresa</option>
+            <option value="administrador">Administrador</option>
+            <option value="candidato">Candidato</option>
+          </select>
+        </div>
+
+        <div class="input-group">
+          <label for="username">Correo o nombre de usuario</label>
+          <div class="input-icon">
+            <input type="text" id="username" name="username" placeholder="Inserte su nombre o correo de usuario" required>
+            <span class="icon">👤</span>
+          </div>
+        </div>
+
+        <div class="input-group">
+          <label for="password">Contraseña</label>
+          <div class="input-icon">
+            <input type="password" id="password" name="password" placeholder="Inserte su contraseña" required>
+            <span class="icon">🔒</span>
+            <span class="toggle-password" onclick="togglePassword()">👁️</span>
+          </div>
+        </div>
+
+        <button type="submit" class="confirm-button">Confirmar</button>
+      </form>
+    </div>
+  </main>
+
+  <script>
+    function togglePassword() {
+      const passwordInput = document.getElementById('password');
+      passwordInput.type = passwordInput.type === 'password' ? 'text' : 'password';
+    }
+  </script>
+</body>
+</html>
